@@ -4,7 +4,8 @@ $( document ).ready(function() {
   rtlCheck(".CommentComposer");
 });
 
-/*functions definition*/
+/*** functions definition ***/
+  /*add rtl support for task descriptions and comments in hebrew*/
 function rtlCheck(selector){
   $("body").on('DOMSubtreeModified', '.SingleTaskPane', function(){
     $(selector).each(function(){
